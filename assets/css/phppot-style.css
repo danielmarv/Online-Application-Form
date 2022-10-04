@@ -1,0 +1,300 @@
+/* version 3.0 table added */
+
+.phppot-container {
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: .9em;
+    color: #1e2a28;
+    width: 65%;
+    margin: 20px;
+    padding: 50px 50px 20px 0px;
+}
+
+.phppot-container table {
+    border-collapse: collapse;
+    width: 75%;
+    margin-bottom: 30px;
+}
+.phppot-container td,
+.phppot-container th {
+    text-align: left;
+    padding: 8px;
+}
+
+
+.phppot-container h1 {
+    font-weight: normal;
+}
+
+input[type=text].phppot-input,
+.phppot-container input,
+.phppot-container textarea,
+.phppot-container select,
+.phppot-input,
+.phppot-select {
+    box-sizing: border-box;
+    width: 200px;
+    height: initial;
+    padding: 8px 5px;
+    border: 1px solid #9a9a9a;
+    border-radius: 3px;
+}
+
+.phppot-container input[type="checkbox"] {
+    width: auto;
+    vertical-align: text-bottom;
+    display: initial;
+    opacity: initial;
+    position: inherit;
+    pointer-events: initial;
+}
+
+
+.phppot-container textarea,
+.phppot-textarea {
+    width: 300px;
+}
+
+.phppot-container select,
+.phppot-select {
+    display: initial;
+    height: 30px;
+    background-color: #fff;
+    padding: 2px 5px;
+}
+
+.phppot-container button,
+.phppot-container input[type=submit] {
+    padding: 8px 0px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #565656;
+    font-weight: bold;
+    background-color: #ffc72c;
+    border-color: #ffd98e #ffbe3d #de9300;
+}
+
+.phppot-container button,
+.phppot-container input[type=submit]:hover {
+    background-color: #f7c027;
+}
+
+.phppot-container button:focus {
+    outline: none;
+}
+
+.phppot-container .phppot-row {
+    padding-top: 15px;
+}
+
+#phppot-message {
+    padding: 6px 20px;
+    font-size: 1em;
+    color: rgb(40, 40, 40);
+    box-sizing: border-box;
+    margin: 0px;
+    border-radius: 3px;
+    width: 100%;
+    overflow: auto;
+}
+
+.phppot-container .error {
+    padding: 6px 20px;
+    border-radius: 3px;
+    background-color: #fb817c;
+    border: 1px solid #e46b66;
+}
+
+.phppot-container .success {
+    background-color: #48e0a4;
+    border: #40cc94 1px solid;
+}
+
+#phppot-loader-icon {
+    color: #1871e6;
+    font-weight: bold;
+    padding: 6px 20px 6px 0;
+    display: none;
+    vertical-align: middle;
+}
+
+#phppot-loader-ack-icon {
+    color: #1871e6;
+    font-weight: bold;
+    padding: 6px 20px 6px 0;
+    display: none;
+    vertical-align: middle;
+}
+
+#phppot-btn-send:hover {
+    background: #1363cc;
+    border: #105bbd 1px solid;
+}
+
+.phppot-container .validation-message {
+    color: #e20900;
+    display: inline-block;
+}
+
+.phppot-container .label {
+    margin-bottom: 3px;
+}
+
+.phppot-form,
+.phppot-section {
+    border: #eaeaea 1px solid;
+    padding: 10px 25px 10px 30px;
+    border-radius: 3px;
+}
+
+.phppot-container .display-none {
+    display: none;
+}
+
+.icon-add-more-attachemnt {
+    cursor: pointer;
+    font-style: italic;
+    font-size: .9em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+@media all and (max-width: 780px) {
+    .phppot-container {
+        width: auto;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .phppot-container {
+        padding: 0px 20px;
+    }
+    .phppot-container h1 {
+        font-size: 1.2em;
+    }
+    .phppot-container input,
+    .phppot-container textarea,
+    .phppot-container select {
+        width: 100%;
+    }
+    .phppot-form {
+        border: none;
+        padding: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.card {
+    color: #fff;
+    background-color: rgba(92, 249, 7, 0.3);
+    min-width: 500px;
+    min-height: 500px;
+    border-radius: 15px;
+}
+
+.card h3 {
+    padding: 30px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.form-group {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.form-group input {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    height: 30px;
+    font-size: 20px;
+    box-shadow: 0 1px 0 0 #fff;
+    transition: all .5s linear;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    outline: none;
+    height: 60px;
+}
+
+.card .btn {
+    min-width: 460px;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #346a85c0;
+    color: #333;
+    padding: 10px 30px;
+    border: 25px;
+    cursor: pointer;
+    border-color: rgb(239, 239, 239);
+    border-radius: 10px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+
+.card .btn:focus {
+    outline: none;
+}
+
+.card .btn:hover {
+    min-width: 460px;
+    background-color: #f413139c;
+}
+
+.card .btn:active {
+    position: relative;
+    top: 2px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}

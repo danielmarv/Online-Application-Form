@@ -1,0 +1,36 @@
+body{
+    background-image:url("./assets/download.jpg");
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+        }
+    .sign-up-container{
+    background-color: transparent;
+    }
+    .form-label{
+        color: #fff;
+    }
+    #signup-btn{
+        color:white;
+        font-weight:bold;
+        background: #343a40;
+    }
+
+    label{
+        color: red;
+    }
+
+    #h1{
+        color: black;
+        font-size: 50px;
+    }
+    .container{
+        background-color: aqua;
+    }
+    
+    .form{
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
